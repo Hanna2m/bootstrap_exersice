@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="EI=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="src/style.css" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>CookBook</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="src/css/all.css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <script src="src/script.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <header>
+            <div class="logo-name">
+                <div class="logo">
+                    <img src="src/logo.jpg" width="96px">
+                </div>
+                <div class="name">
+                    <h1>Evreday cooking</h1>
+                    <h2>Tasty & easy</h2>
+                </div>
+                
+            </div>
+            
+            <div class="row justify-content-end">
+            <div class="p-1 bg-light rounded rounded-pill col-9 shadow-sm mb-4">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button id="button-addon2" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+                  </div>
+                  <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+                </div>
+            </div>
+            </div>
+
+        </header>
+
+        <main>
+       
+            <div class="row">
+             <!--Navigation-->
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-breakfast-tab" data-toggle="pill" href="#v-pills-breakfast" role="tab" aria-controls="v-pills-breakfast" aria-selected="true" style="background-color: coral;">Breakfast</a>
+                    <a class="nav-link" id="v-pills-lunch-tab" data-toggle="pill" href="#v-pills-lunch" role="tab" aria-controls="v-pills-lunch" aria-selected="false" style="color: coral;">Lunch</a>
+                    <a class="nav-link" id="v-pills-snack-tab" data-toggle="pill" href="#v-pills-snack" role="tab" aria-controls="v-pills-snack" aria-selected="false"style="color: coral;">Afternoon snack</a>
+                    <a class="nav-link" id="v-pills-dinner-tab" data-toggle="pill" href="#v-pills-dinner" role="tab" aria-controls="v-dinner-settings" aria-selected="false" style="color: coral;">Dinner</a>
+                    </div>
+                </div>
+            <!--</div>-->
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-breakfast" role="tabpanel" aria-labelledby="v-pills-breakfast-tab">
+                    
+                    <!--recipe card-->
+                    <div class="card-deck">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card">
+                                    
+                                    <div class="img-container">
+                                        <img src="src/img_1.jpeg" class="card-img-top" alt="...">
+                                        <div class="middle">
+                                            <div class="text">Bread-free bacon and egg sliders</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bread-free bacon and egg sliders</h5>
+                                        <p class="card-text">An easy, quick gluten-free breakfast or snack, this 6-ingredient slider is great for kids, work, or a post-workout snack.</p>
+                                        <ul>
+                                            <li>6 streaky bacon rashers</li>
+                                            <li>6 eggs, hard-boiled</li>
+                                            <li>1 large tomato, cut into slices</li>
+                                        </ul>
+
+                                        <button type="button" class="btn btn-primary" style="background-color: coral; border-color: coral;">full recipe</button>
+
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card">
+                                    <img src="src/img_1.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bread-free bacon and egg sliders</h5>
+                                        <p class="card-text">An easy, quick gluten-free breakfast or snack, this 6-ingredient slider is great for kids, work, or a post-workout snack.</p>
+                                        <ul>
+                                            <li>6 streaky bacon rashers</li>
+                                            <li>6 eggs, hard-boiled</li>
+                                            <li>1 large tomato, cut into slices</li>
+                                        </ul>
+
+                                        <button type="button" class="btn btn-primary" style="background-color: coral; border-color: coral;">full recipe</button>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+                                <div class="card">
+                                    <img src="src/img_1.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bread-free bacon and egg sliders</h5>
+                                        <p class="card-text">An easy, quick gluten-free breakfast or snack, this 6-ingredient slider is great for kids, work, or a post-workout snack.</p>
+                                        <ul>
+                                            <li>6 streaky bacon rashers</li>
+                                            <li>6 eggs, hard-boiled</li>
+                                            <li>1 large tomato, cut into slices</li>
+                                        </ul>
+
+                                        <button type="button" class="btn btn-primary" style="background-color: coral; border-color: coral;">full recipe</button>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                <div class="tab-pane fade" id="v-pills-lunch" role="tabpanel" aria-labelledby="v-pills-lunch-tab"></div>
+                <div class="tab-pane fade" id="v-pills-snack" role="tabpanel" aria-labelledby="v-pills-snack-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-dinner" role="tabpanel" aria-labelledby="v-pills-dinner-tab">...</div>
+                </div>
+            </div>
+</div>
+
+</main>        
+           
+           
+            
+    </body>
+</html>
