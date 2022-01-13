@@ -79,5 +79,21 @@ main {
     padding: 16px 32px;
   }
 
+  .nav-pills .nav-link.active { 
+  background-color: coral !important;
+}
+
+.nav-link {
+  color: coral;
+}
+
+.card-bottom-part {
+  display:flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
 
 

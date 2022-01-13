@@ -49,14 +49,16 @@
             <div class="row">
              <!--Navigation-->
                 <div class="col-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-breakfast-tab" data-toggle="pill" href="#v-pills-breakfast" role="tab" aria-controls="v-pills-breakfast" aria-selected="true" style="background-color: coral;">Breakfast</a>
-                    <a class="nav-link" id="v-pills-lunch-tab" data-toggle="pill" href="#v-pills-lunch" role="tab" aria-controls="v-pills-lunch" aria-selected="false" style="color: coral;">Lunch</a>
-                    <a class="nav-link" id="v-pills-snack-tab" data-toggle="pill" href="#v-pills-snack" role="tab" aria-controls="v-pills-snack" aria-selected="false"style="color: coral;">Afternoon snack</a>
-                    <a class="nav-link" id="v-pills-dinner-tab" data-toggle="pill" href="#v-pills-dinner" role="tab" aria-controls="v-dinner-settings" aria-selected="false" style="color: coral;">Dinner</a>
-                    </div>
+                    <!--<div class="d-flex align-items-start">-->
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#v-pills-breakfast" type="button" role="tab" aria-controls="v-pills-breakfast" aria-selected="true">Breakfast</button>
+                          <button class="nav-link" id="v-pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lunch" type="button" role="tab" aria-controls="v-pills-lunch" aria-selected="false">Lunch</button>
+                          <button class="nav-link" id="v-pills-snack-tab" data-bs-toggle="pill" data-bs-target="#v-pills-snack" type="button" role="tab" aria-controls="v-pills-snack" aria-selected="false">Afternoon snack</button>
+                          <button class="nav-link" id="v-pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dinner" type="button" role="tab" aria-controls="v-pills-dinner" aria-selected="false">Dinner</button>
+                        </div>
+                    <!--</div>-->
                 </div>
-            <!--</div>-->
+    
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-breakfast" role="tabpanel" aria-labelledby="v-pills-breakfast-tab">
@@ -77,15 +79,38 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Bread-free bacon and egg sliders</h5>
                                         <p class="card-text">An easy, quick gluten-free breakfast or snack, this 6-ingredient slider is great for kids, work, or a post-workout snack.</p>
-                                        <ul>
-                                            <li>6 streaky bacon rashers</li>
-                                            <li>6 eggs, hard-boiled</li>
-                                            <li>1 large tomato, cut into slices</li>
-                                        </ul>
+                                        <table class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">ingredients</th>
+                                                <th scope="col">Mesure</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>streaky bacon rashers</td>
+                                                <td>6 pieces</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>eggs, hard-boiled</td>
+                                                <td>6</td>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>large tomato, cut into slices</td>
+                                                <td>1</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
 
                                         <button type="button" class="btn btn-primary" style="background-color: coral; border-color: coral;">full recipe</button>
 
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <div class="card-bottom-part">
+                                            <i onclick="shareAlert()" class="fas fa-share"></i>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
